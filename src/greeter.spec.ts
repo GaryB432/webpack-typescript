@@ -6,7 +6,7 @@ describe("Greeter", () => {
         greeter = new Greeter("testing!");
     });
     it("should greet", () => {
-        expect(greeter.greet()).toBe("<h1>testing!</h1>")
+        expect(greeter.greet()).toBe("<h1>testing!</h1>");
     });
 
 });
