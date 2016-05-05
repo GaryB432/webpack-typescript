@@ -4,7 +4,9 @@
   "description": "webpack typescript sample",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
