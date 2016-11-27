@@ -1,12 +1,8 @@
-abstract class AbstractGreeter {
-    public abstract greet(): string;
-}
 
-export class Greeter extends AbstractGreeter {
-    constructor(public greeting: string) {
-        super();
-    }
-    public greet(): string {
-        return "<h1>" + this.greeting + "</h1>";
-    }
+export class Greeter {
+  constructor(public greeting: string) {
+  }
+  public greet(): string {
+    return "<h1>" + this.greeting + "</h1>";
+  }
 };
