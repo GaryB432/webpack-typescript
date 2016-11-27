@@ -1,23 +1,16 @@
-**Install Webpack**
-```
-npm install -g webpack webpack-dev-server
-```
+# webpack-typescript
 
-**Fetch dependencies**
+## Fetch dependencies
 ```
 npm install
 ```
 
-**Run Webpack**
+## Run Webpack
 ```
-webpack
+npm run build
 ```
 
-**Start http-server**
-```
-webpack-dev-server
-```
-shortcut for this command
+## Start http-server
 ```
 npm start
 ```
