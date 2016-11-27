@@ -11,12 +11,17 @@ module.exports = {
     app: ['./src/app.ts']
   },
   module: {
-    loaders: [
-      { test: /\.ts$/, loader: 'ts-loader' }
+    rules: [
+      {
+        test: /\.ts$/,
+        loader: 'ts-loader'
+      },
+      {
+        enforce: 'pre',
+        test: /\.ts$/,
+        loader: 'tslint-loader'
+      }
     ],
-    preLoaders: [
-      { test: /\.ts$/, loader: 'tslint' }
-    ]
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -25,6 +30,6 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([{ from: 'src/public' }])],
   resolve: {
-    extensions: ['', '.ts']
+    extensions: ['.ts']
   }
 }

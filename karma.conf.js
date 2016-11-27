@@ -1,6 +1,7 @@
 // Karma configuration
 
 var webpack = require("webpack");
+var webpackConfig = require('./webpack.config');
 var path = require("path");
 
 var configSettings = {
@@ -35,29 +36,7 @@ module.exports = function (config) {
 			'./src/**/*.ts': ['webpack', 'coverage'],
 		},
 
-
-		webpack: {
-			resolve: {
-				extensions: ["", ".js", ".ts"]
-			},
-			module: {
-				preLoaders: [
-					{ test: /\.ts$/, loader: "tslint" }
-				],
-				loaders: [
-					{ test: /\.ts$/, loader: "ts-loader" }
-				],
-
-				postLoaders: [
-					{
-						test: /\.ts$/,
-						include: path.resolve('src'),
-						loader: 'istanbul-instrumenter-loader',
-						exclude: [/\.spec\.ts$/, /karma-shim\.js$/]
-					}
-				]
-			}
-		},
+		webpack: webpackConfig,
 
 		webpackMiddleware: {
 			stats: {

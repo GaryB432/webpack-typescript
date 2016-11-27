@@ -4,7 +4,7 @@
   "description": "webpack typescript sample",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --no-inline",
     "build": "webpack",
     "test": "karma start"
   },
@@ -49,8 +49,8 @@
     "ts-loader": "^1.2.2",
     "tslint": "^4.0.2",
     "tslint-loader": "^3.2.0",
-    "typescript": "^2.0.10",
-    "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2"
+    "typescript": "2.0.6",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "2.1.0-beta.9"
   }
 }
