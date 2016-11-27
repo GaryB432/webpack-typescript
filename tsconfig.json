@@ -1,12 +1,9 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "sourceMap": true,
-    "noEmitHelpers": true
-  },
-  "exclude": [
-    "node_modules",
-    "typings/main",
-    "typings/main.d.ts"
-  ]
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        "noEmitHelpers": true,
+        "sourceMap": true
+    }
 }
